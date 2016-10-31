@@ -333,7 +333,7 @@ func (x *parserLex) lexString(yylval *parserSymType, quoted bool) (int, bool) {
 			}
 		}
 
-		// If we hit a dollar sign, then check if we're starting
+		// If we hit a hashtag sign, then check if we're starting
 		// another interpolation. If so, then we're done.
 		if c == '#' {
 			n := x.peek()
@@ -344,7 +344,7 @@ func (x *parserLex) lexString(yylval *parserSymType, quoted bool) (int, bool) {
 				break
 			}
 
-			// If it is '#', then we're escaping a dollar sign
+			// If it is '#', then we're escaping a hashtag sign
 			if n == '#' {
 				x.next()
 			}

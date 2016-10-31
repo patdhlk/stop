@@ -5,8 +5,8 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/patdhlk/stop/ast"
 	"github.com/mitchellh/reflectwalk"
+	"github.com/patdhlk/stop/ast"
 )
 
 // WalkFn is the type of function to pass to Walk. Modify fields within

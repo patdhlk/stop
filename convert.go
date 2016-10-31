@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/patdhlk/stop/ast"
 	"github.com/mitchellh/mapstructure"
+	"github.com/patdhlk/stop/ast"
 )
 
 var STOPMapstructureDecodeHookSlice []interface{}

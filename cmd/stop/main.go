@@ -106,9 +106,8 @@ func main() {
 		GlobalScope: &ast.BasicScope{
 			VarMap: map[string]ast.Variable{
 				"var.test": ast.Variable{
-					Type: ast.TInt,
-					// change to 2 to see that it outputs false
-					Value: 2,
+					Type:  ast.TInt,
+					Value: 1,
 				},
 			},
 			FuncMap: map[string]ast.Function{
